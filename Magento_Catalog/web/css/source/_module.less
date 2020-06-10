@@ -1,4 +1,4 @@
-// /** /**
+// /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /** /**
 //  * Copyright © Magento, Inc. All rights reserved.
 //  * See COPYING.txt for license details.
 //  */
@@ -1117,6 +1117,25 @@
   }
 }
 
-.sidebar.sidebar-additional {
-  display: none;
+.catalog-category-view {
+  #maincontent {
+    max-width: 100%;
+  }
+
+  .sidebar-main {
+    position: fixed;
+    right: 0;
+    top: 123px;
+    bottom: 0;
+    z-index: 50;
+    overflow-y: auto;
+    min-width: 352px;
+    padding: 52px 24px 24px 48px;
+
+    background-color: @color-white;
+  }
+
+  .sidebar-additional {
+    display: none;
+  }
 }
