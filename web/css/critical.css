@@ -440,14 +440,15 @@ body > .loading-mask {
   font-family: "Prompt", sans-serif;
 }
 
-.page-header {
+.page-wrapper .page-header {
   display: grid;
   grid-template-columns: 80% 20%;
   padding-top: 16px;
-  border: none;
+  border-bottom: none;
+  position: sticky;
 }
 
-.page-header .header.content {
+.page-wrapper .page-header .header.content {
   grid-area: 1/1/2/2;
   max-width: none;
   width: 100% !important;
@@ -458,27 +459,39 @@ body > .loading-mask {
   display: grid;
   grid-template-columns: 5% 50% 40% 5%;
 }
-.header.content .nav-toggle {
+.page-wrapper .page-header .header.content .nav-toggle {
   display: block;
 }
-.header.content .logo {
+.page-wrapper .page-header .header.content .logo {
   margin: 0;
 }
-.header.content .block.block-search {
+.page-wrapper .page-header .header.content .block.block-search {
   grid-area: 1/3/2/4;
 }
-.header.content .minicart-wrapper {
+.page-wrapper .page-header .header.content .minicart-wrapper {
   grid-column: 4/5;
+  position: fixed;
+  right: 50px;
 }
-.header.content .compare.wrapper {
+.page-wrapper .page-header .header.content .compare.wrapper {
   display: none;
 }
 
-.page-header .panel.wrapper {
+.page-wrapper .page-header .panel.wrapper {
   grid-area: 1/2/2/3;
   display: flex;
   background-color: transparent !important;
 }
 .header.panel > .header.links > li > a {
   color: #000 !important;
+}
+.header.panel > .header.links > li:last-child {
+  display: none;
+}
+
+.page-wrapper .sections.nav-sections{
+  position: fixed;
+  top: 0;
+  left: 0;
+
 }

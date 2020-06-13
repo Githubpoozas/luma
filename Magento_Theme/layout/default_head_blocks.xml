@@ -15,6 +15,6 @@
         <font src="fonts/Luma-Icons.woff2"/>
         <link src="images/logo.svg" rel="icon" sizes="32x32" />
         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
-        <css src="css/custom.css" rel="stylesheet" type="text/css"  />
+        <css src="css/custom.css" />
     </head>
 </page>
