@@ -1,6 +1,3 @@
-.page-header {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.nav-sections-item-content{
+    background-color: red;
 }
-
-
