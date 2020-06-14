@@ -446,6 +446,8 @@ body > .loading-mask {
   padding-top: 16px;
   border-bottom: none;
   position: sticky;
+  top: 0;
+  z-index: 5;
 }
 
 .page-wrapper .page-header .header.content {
@@ -458,6 +460,8 @@ body > .loading-mask {
   padding-right: 0;
   display: grid;
   grid-template-columns: 5% 50% 40% 5%;
+  align-items: center;
+  font-size: 12px;
 }
 .page-wrapper .page-header .header.content .nav-toggle {
   display: block;
@@ -472,6 +476,7 @@ body > .loading-mask {
   grid-column: 4/5;
   position: fixed;
   right: 50px;
+  top: 37px;
 }
 .page-wrapper .page-header .header.content .compare.wrapper {
   display: none;
@@ -481,6 +486,7 @@ body > .loading-mask {
   grid-area: 1/2/2/3;
   display: flex;
   background-color: transparent !important;
+  align-items: center;
 }
 .header.panel > .header.links > li > a {
   color: #000 !important;
@@ -488,10 +494,28 @@ body > .loading-mask {
 .header.panel > .header.links > li:last-child {
   display: none;
 }
+.breadcrumbs {
+  display: none;
+}
 
-.page-wrapper .sections.nav-sections{
+/* .page-wrapper .sections.nav-sections {
   position: fixed;
   top: 0;
   left: 0;
-
+  z-index: 10;
+  bottom: 0;
+  height: 100%;
+  background-color: #fff;
+  padding: 80px 45px 0 30px;
+  min-width: 300px;
+  max-width: 420px;
 }
+.page-wrapper
+  .sections.nav-sections
+  .section-items.nav-sections-items
+  .section-item-content.nav-sections-item-content
+  .navigation
+  > .ui-menu {
+  display: flex;
+  flex-direction: column;
+} */
