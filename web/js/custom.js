@@ -15,11 +15,48 @@ define(["jquery"], function ($) {
     $(".panel.header .header.links .authorization-link").after(
       "<li class='help-wrapper'><a href='#'>help</a></li>"
     )
-    //  $(".minicart-wrapper .showcart").prepend(
-    //     "<img id='cart-logo' src='" +
-    //       document.location.href +
-    //       "pub/static/version1592159869/frontend/Magento/luma/en_US/images/briefcase.svg'height='32' width='32' />"
-    //   )
+
+    if ($("body").hasClass("page-with-filter")) {
+      $(".page-header").append(
+        "<div class='column-filter-wrapper'><div class='column-options'><p class='column-label'>VIEW</p><a class='column-button selected' id='column-two'>2</a><a class='column-button' id='column-four'>4</a><p class='separator'>|</p></div><div class='filter-control-panel'><a class='filter-control-label' id='filter-control-label'>filter</a><p class='filter-count'></p></div><div class='clear-wrapper'><a id='clear-button'>clear</a></div></div>"
+      )
+    }
+    $("#column-two").on("click", function () {
+      $(this).addClass("selected")
+      $("#column-four").removeClass("selected")
+      $(".grid .product-items").removeClass("four-column")
+    })
+    $("#column-four").on("click", function () {
+      $(this).addClass("selected")
+      $("#column-two").removeClass("selected")
+      $(".grid .product-items").addClass("four-column")
+    })
+
+    if ($(".block-actions.filter-actions").length) {
+      $(".clear-wrapper").addClass("selected")
+    }
+
+    $("#clear-button").on("click", function () {
+      // $(".block-actions.filter-actions a").trigger("click")
+      $(location).attr("href", $(location).attr("href").split("?")[0])
+      // console.log($(location).attr("href").split("?")[0])
+    })
+
+    var filterCount = $(".mana-selected.item").length
+    if (filterCount > 0) {
+      $(".filter-count").text("(" + filterCount + ")")
+    }
+
+    // $(".mana-selected.item").length.change(function () {
+    //   console.log($(".mana-selected.item").length)
+    // })
+
+    $("#filter-control-label").on("click", function () {
+      $(this).parent().toggleClass("selected")
+      $(".sidebar.sidebar-main").toggleClass("show")
+      $(".clear-wrapper").toggleClass("show")
+    })
+
     $(".minicart-wrapper").appendTo($(".panel.header"))
 
     $(".sidebar-nav-wrapper a").on("click", function (e) {
