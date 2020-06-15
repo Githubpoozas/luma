@@ -1,6 +1,6 @@
 var config = {
     deps: [
-        "js/custom",
+        "js/custom"
     ],
 
 
