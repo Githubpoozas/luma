@@ -16,6 +16,8 @@
         <link src="images/logo.svg" rel="icon" sizes="32x32" />
         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
         <css src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" src_type="url"/>
+        <link src="js/swiper.min.js"/>
         <link src="js/custom.js"/>
+        
     </head>
 </page>

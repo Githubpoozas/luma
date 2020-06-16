@@ -1,4 +1,4 @@
-define(["jquery"], function ($) {
+define(["jquery","swiper"], function ($,swiper) {
   "use strict"
 
   $(document).ready(function ($) {
@@ -88,5 +88,8 @@ define(["jquery"], function ($) {
     )
     console.log("custom jquery loaded")
   })
+
+  var slider = new swiper('.swiper-container');
+
   return
 })
