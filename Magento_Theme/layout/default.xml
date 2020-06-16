@@ -23,11 +23,13 @@
         <referenceContainer name="footer">
             <block class="Magento\Store\Block\Switcher" name="store_switcher" as="store_switcher" after="footer_links" template="Magento_Store::switch/stores.phtml"/>
         </referenceContainer>
-        <referenceBlock name="wishlist_sidebar" remove="true" />
         <referenceBlock name="catalog.compare.link" remove="true" />
         <referenceBlock name="catalog.compare.sidebar" remove="true"/>
         <referenceBlock name="catalogsearch.product.addto.compare" remove="true"/>
         <referenceBlock name="category.product.addto.compare" remove="true"/>
+        <referenceBlock name="crosssell.product.addto.compare" remove="true" />
+        <referenceBlock name="related.product.addto.compare" remove="true" />
+        <referenceBlock name="upsell.product.addto.compare" remove="true" />
         <referenceBlock name="view.addto.compare" remove="true" />
     </body>
 </page>

@@ -5,7 +5,7 @@ define(["jquery","swiper"], function ($,swiper) {
     $(".header.content").prepend(
       "<div id='burger-wrapper'><img src='" +
         document.location.origin +
-        "/magento/pub/static/version1592159869/frontend/Magento/luma/en_US/images/burger.svg' id='burger-icon' width='32' height='32'></div>"
+        "/magento2/pub/static/version1592159869/frontend/Magento/luma/en_US/images/burger.svg' id='burger-icon' width='32' height='32'></div>"
     )
     $(".block.block-search").remove()
     $(".header.content").append(
