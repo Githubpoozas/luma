@@ -32,10 +32,6 @@ define(["jquery"], function ($) {
       $(".grid .product-items").addClass("four-column")
     })
 
-    if ($(".block-actions.filter-actions").length) {
-      $(".clear-wrapper").addClass("selected")
-    }
-
     $("#clear-button").on("click", function () {
       // $(".block-actions.filter-actions a").trigger("click")
       $(location).attr("href", $(location).attr("href").split("?")[0])
@@ -44,7 +40,10 @@ define(["jquery"], function ($) {
 
     var filterCount = $(".mana-selected.item").length
     if (filterCount > 0) {
-      $(".filter-count").text("(" + filterCount + ")")
+      // $(".filter-count").text("(" + filterCount + ")")
+      $(".filter-control-label").append("<span class='filter-count'>("+filterCount+")</span>")
+      $(".clear-wrapper").addClass("selected")
+
     }
 
     // $(".mana-selected.item").length.change(function () {
