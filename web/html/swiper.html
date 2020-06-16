@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <a href="#" class="swiper-slide">
+          <picture>
+            <source
+              media="(orientation: portrait)"
+              srcset="{{media url='wysiwyg/slide/rsz_banner1.jpg'}}"
+            />
+            <source
+              media="(orientation: landscape)"
+              srcset="{{media url='wysiwyg/slide/rsz_banner2.jpg'}}"
+            />
+            <img src="{{media url='wysiwyg/slide/rsz_banner2.jpg'}}" />
+          </picture>
+        </a>
+        <a href="#" class="swiper-slide">
+          <picture>
+            <source
+              media="(orientation: portrait)"
+              srcset="{{media url='wysiwyg/slide/portrait_0.jpg'}}"
+            />
+            <source
+              media="(orientation: landscape)"
+              srcset="{{media url='wysiwyg/slide/landscape_0.jpg'}}"
+            />
+            <img src="{{media url='wysiwyg/slide/landscape_0.jpg'}}" />
+          </picture>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

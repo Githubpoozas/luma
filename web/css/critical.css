@@ -444,6 +444,13 @@ body > .loading-mask {
   font-family: "Prompt", sans-serif;
 }
 
+body .page-wrapper .page-main{
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -527,8 +534,9 @@ color: #000;
 .page-wrapper .page-header .header.content .compare.wrapper {
   display: none;
 }
-.minicart-wrapper {
+.panel.header .minicart-wrapper {
   margin-left: 0;
+  display: flex;
 }
 .action.showcart{
   vertical-align: text-bottom;

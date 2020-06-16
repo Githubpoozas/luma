@@ -89,7 +89,12 @@ define(["jquery","swiper"], function ($,swiper) {
     console.log("custom jquery loaded")
   })
 
-  var slider = new swiper('.swiper-container');
+  var slider = new swiper('.swiper-container',{
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+  });
 
   return
 })
